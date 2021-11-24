@@ -3,33 +3,20 @@ all:
   children:
     bootstrap:
       hosts:
-        bootstrap.example.com:
+        bootstrap.ocp.rhtrva.internal:
           dhcp: false
-          ipv4: 192.168.122.15
+          ipv4: 10.0.200.110
     
     master:
       hosts:
-        master1.example.com:
+        master0.ocp.rhtrva.internal:
           dhcp: false
-          ipv4: 192.168.122.20
+          ipv4: 10.0.200.100
 
-        master2.example.com:
+        master1.ocp.rhtrva.internal:
           dhcp: false
-          ipv4: 192.168.122.21
+          ipv4: 10.0.200.101
 
-        master3.example.com:
-          ipv4: 192.168.122.22
-        
-    worker:
-      hosts:
-        worker1.example.com:
-          dhcp: true
-          ipv4: 192.168.122.30
-
-        worker2.example.com:
-          dhcp: false
-          ipv4: 192.168.122.31
-
-        worker3.example.com:
-          ipv4: 192.168.122.32
+        master2.ocp.rhtrva.internal.:
+          ipv4: 10.0.200.102
 ...
